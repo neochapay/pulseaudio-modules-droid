@@ -506,7 +506,9 @@ struct string_conversion string_conversion_table_output_channels[] = {
     STRING_ENTRY( AUDIO_CHANNEL_OUT_MONO                            ),
     STRING_ENTRY( AUDIO_CHANNEL_OUT_STEREO                          ),
     STRING_ENTRY( AUDIO_CHANNEL_OUT_QUAD                            ),
+#ifdev HAVE_ENUM_AUDIO_CHANNEL_OUT_SURROUND
     STRING_ENTRY( AUDIO_CHANNEL_OUT_SURROUND                        ),
+#endif
     STRING_ENTRY( AUDIO_CHANNEL_OUT_5POINT1                         ),
 #ifdef HAVE_ENUM_AUDIO_CHANNEL_OUT_5POINT1_BACK
     STRING_ENTRY( AUDIO_CHANNEL_OUT_5POINT1_BACK                    ),
